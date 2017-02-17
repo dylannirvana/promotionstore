@@ -29,9 +29,7 @@ You will be able to add modules that will automatically conform to the design. F
 * [SASS](http://sass-lang.com/) - CSS with Superpowers
 * [Compass](http://compass-style.com/) - Open Source CSS Framework
 * [Browserify](http://browserify.org/) - Require Modules
-
 * [WordPress](http://wordpress.org/) - Content Management Framework
-
 * [React](https://facebook.github.io/react/) - User Interface Library
 * [Meteor](http://meteor.com/) - JavaScript iDevE for Desktop and Mobile
 * [Angular](http://angular.io/) - JavaScript Desktop and Mobile Framework
