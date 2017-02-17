@@ -1,0 +1,21 @@
+{
+  "name": "workflow",
+  "description": "scaffold",
+  "main": "index.js",
+  "authors": [
+    "pierino cipolloni"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pierinocipolloni/promotionstore",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

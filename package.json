@@ -1,6 +1,6 @@
 {
   "name": "workflow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "scaffold",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
+    "gulp-filter": "^5.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-minify-html": "^1.0.6",
