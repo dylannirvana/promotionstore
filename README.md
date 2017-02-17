@@ -22,7 +22,7 @@ You will be able to add modules that will automatically conform to the design. F
 ## Built With
 
 * [Gulp](http://www.gulpjs.com/) - The task runner used
-* [Bootstrap](https://getbootstrap.com/) - Front End framework
+* [Twitter Bootstrap 4](https://getbootstrap.com/) - Front End framework
 * [Bower](http://bower.io/) - Dependency Management
 * [Node](http://nodejs.org/) - Chrome V8 runtime
 * [npm](http://npmjs.com/) - JavaScript Package Manager
@@ -30,9 +30,9 @@ You will be able to add modules that will automatically conform to the design. F
 * [Compass](http://compass-style.com/) - Open Source CSS Framework
 * [Browserify](http://browserify.org/) - Require Modules
 * [WordPress](http://wordpress.org/) - Content Management Framework
-* [React](https://facebook.github.io/react/) - User Interface Library
+* [Facebook React](https://facebook.github.io/react/) - User Interface Library
 * [Meteor](http://meteor.com/) - JavaScript iDevE for Desktop and Mobile
-* [Angular](http://angular.io/) - JavaScript Desktop and Mobile Framework
+* [Google Angular 2](http://angular.io/) - JavaScript Desktop and Mobile Framework
 
 ## Authors
 

@@ -4,8 +4,27 @@
 
 
 /* my stylesheets */
-.card-blockquote {
-  padding: 0;
-  margin-bottom: 0;
-  border-left: 0;
+
+// NAVIGATION
+.bg-inverse {
+  background-color: #1d7ab5 !important;
 }
+
+.mr-auto {
+  margin-right: 10px !important;
+  margin-left: auto !important;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #333;
+}
+
+// Does not override BS
+// li .list-item a {
+//   color: blue;
+// }
+
+// BS variables are not throwing errors but
+// are not overriding them either
+// dont use this approach
+// $navbar-inverse-color: blue;
