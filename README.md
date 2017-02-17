@@ -2,83 +2,41 @@
 
 This development project serves as a template builder for Promotion Store and its affiliates.
 
-## Getting Started
+## Methodology
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Modern Front End "Single Page Applications" like this are built with top-tier web properties like Facebook and Instagram in mind. They perform better, are faster and relatively real-time, and conform to contemporary User Experience standards. They are Responsive and are built for mobile. This should be borne out in metrics on Google Analytics.
 
-### Prerequisites
+If your customers experiences are easy and enjoyable, you sell more stuff.
 
-What things you need to install the software and how to install them
+There are two parts to this type of application. The first is the Front End or client-side application. This is HTML5 CSS3 JavaScript built with an advanced workflow using Gulp.js as a task runner. This automates the build process and manages dependencies, which greatly speeds development. The Front End app is completely ecumenical to the Back End; it can work with almost any server-side configuration.
 
-```
-Bootstrap
-Gulp.js
-Node.js
-npm
+The second part is server and its database. In this particular situation, we will be dropping this Front End application onto an instance of WordPress. From there I will build a custom theme based on Underscores in PHP MySQL to receive it. WordPress will provide a Content Management System, an ecosystem of prebuilt plugins, and e-commerce through Woo Commerce.
 
-```
+(There is a more advanced configuration that uses Node.js on the Back End via Meteor.js, and React and Angular on the Front End).
 
-### Installing
+In either case, the application(s) are extensible and built to scale with the growth of the business. Also, because they are using accepted standards and best practices, it will not be difficult for other developers to continue development or make adjustments.
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Gulp](http://www.gulpjs.com/) - The task runner used
+* [Bootstrap](https://getbootstrap.com/) - Front End framework
+* [Bower](http://bower.io/) - Dependency Management
+* [Node](http://nodejs.org/) - Chrome V8 runtime
+* [npm](http://npmjs.com/) - JavaScript Package Manager
+* [SASS](http://sass-lang.com/) - CSS with Superpowers
+* [Compass](http://compass-style.com/) - Open Source CSS Framework
+* [Browserify](http://browserify.org/) - Require Modules
 
-## Contributing
+* [WordPress](http://wordpress.org/) - Content Management Framework
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+* [React](https://facebook.github.io/react/) - User Interface Library
+* [Meteor](http://meteor.com/) - JavaScript iDevE for Desktop and Mobile
+* [Angular](http://angular.io/) - JavaScript Desktop and Mobile Framework
 
 ## Authors
 
 * **Pierino Cipolloni** - *Initial work* - [Icarian](https://github.com/pierinocipolloni)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
@@ -86,6 +44,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* I will tip hat to anyone who's code was used
 * Inspiration
 * etc
