@@ -16,6 +16,8 @@ The second part is server and its database. In this particular situation, we wil
 
 In either case, the application(s) are extensible and built to scale with the growth of the business. Also, because they are using accepted standards and best practices, it will not be difficult for other developers to continue development or make adjustments.
 
+You will be able to add modules that will automatically conform to the design. Features like blogs, pretty much unlimited pages and other plugins can be added without a whole lot of configuration. Equally, you can use these templates to build an unlimited number of other stand-alone sites.
+
 
 ## Built With
 
