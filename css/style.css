@@ -8538,3 +8538,42 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navbar-inverse .navbar-nav .nav-link {
   color: #333;
 }
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url(http://placehold.it/1000x400);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #777;
+}
+
+div.container {
+  margin-top: 24px;
+}
+
+.card {
+  margin-bottom: 24px;
+}
+
+.card-img-top {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+a.btn.btn-primary {
+  margin-bottom: 16px;
+}
+
+a.card-img-top {
+  position: relative;
+  width: 100%;
+}
+
+aside .card {
+  border: none;
+}
+
+.sidebar-text {
+  padding-left: 16px;
+}
