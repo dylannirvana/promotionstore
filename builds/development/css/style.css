@@ -8536,30 +8536,82 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #333;
+  color: #fff;
 }
 
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+a:visited {
+  color: white;
+}
+
+.main-navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.main-navigation ul li {
+  float: none;
+}
+
+.dropdown-menu {
+  color: #000;
+}
+.dropdown-menu a:visited {
+  color: #000;
+}
+
+ul.navbar-nav {
+  margin-left: auto !important;
+}
+ul.navbar-nav > li > a {
+  display: block;
+  padding: 0.5em 1em;
+  color: white;
+}
+ul.navbar-nav > li > a:focus, ul.navbar-nav > li > a:hover {
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+/*
+Bootstrap 4.0.0-alpha2 navbar with dropdown menus
+=================================================
+A small CSS modification is required. Add this to your theme CSS.
+*/
 .jumbotron {
   margin-bottom: 0px;
-  background-image: url(http://placehold.it/1000x600);
+  background-image: url(images/bluegirl.jpg);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #777;
+  color: #000;
+  padding: 0;
 }
 .jumbotron img {
   height: 100%;
+  position: relative;
 }
-
-.jumbotron2 {
-  margin-top: 42px;
-  margin-bottom: 0px;
-  background-image: url(http://icarianpublishing.com/clients/promotionstore/builds/development/images/bluegirl.jpg);
-  background-position: 0% 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #777;
-  height: 480px;
+.jumbotron .jumbotron-copy {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.jumbotron .jumbotron-copy h1, .jumbotron .jumbotron-copy p {
+  display: none;
+}
+@media (min-width: 768px) {
+  .jumbotron .jumbotron-copy h1, .jumbotron .jumbotron-copy p {
+    display: block;
+  }
 }
 
 div.container {
@@ -8596,3 +8648,5 @@ aside .card {
 .tiny {
   font-size: .85rem;
 }
+
+/*# sourceMappingURL=style.css.map */

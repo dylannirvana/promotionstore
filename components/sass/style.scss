@@ -1,3 +1,4 @@
+// @import "wordpress/style";
 @import "bootstrap/bootstrap";
 /* my imports */
 @import "header/header";
@@ -16,13 +17,98 @@
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #333;
+  color: #fff;
 }
 
-// Does not override BS
-// li .list-item a {
-//   color: blue;
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+a:visited {
+    color: white;
+}
+
+// $color__link-visited: white;
+
+.main-navigation {
+	ul {
+		display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
+
+    li {
+  		float: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  color: #000;
+
+  a:visited {
+    color: #000;
+  }
+}
+
+
+// ul.navbar-nav > li > a {
+//   display: block;
+//   padding: $nav-link-padding;
+//   color: white;
+//   // margin-right: auto;
+//
+//   @include hover-focus {
+//     text-decoration: none;
+//   }
 // }
+
+// BOOTSTRAP TO WORDPRESS CORRECTIONS
+ul.navbar-nav {
+  margin-left: auto !important;
+
+  > li > a {
+    display: block;
+    padding: $nav-link-padding;
+    color: white;
+    // margin-right: auto;
+
+    @include hover-focus {
+      text-decoration: none;
+    }
+  }
+}
+
+// BS TO WP DROPDOWN MENU CORREX
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+// .navbar-collapse > form {
+//   margin-right: auto;
+// }
+
+/*
+Bootstrap 4.0.0-alpha2 navbar with dropdown menus
+=================================================
+A small CSS modification is required. Add this to your theme CSS.
+*/
+
+// .navbar .dropdown-menu li {
+//   width: 100%;
+//   margin-left: 0 !important;
+// }
+
+// li > a {
+//   color: #fff;
+// }
+// Does not override BS
+// li.menu-item a {
+//   color: white;
+// }
+
 
 // BS variables are not throwing errors but
 // are not overriding them either
@@ -32,31 +118,47 @@
 // JUMBOTRON
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(http://placehold.it/1000x600);
+    background-image: url(images/bluegirl.jpg);
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #777;
+    color: #000;
+    padding: 0;
     // height: 400px;
     // text-shadow: black 0.3em 0.3em 0.3em;
     img {
       height: 100%;
+      position: relative;
+    }
+    .jumbotron-copy {
+      position: absolute;
+      h1, p {
+        display: none;
+      }
+      top: 15%;
+      left: 5%;
+
+      @include media-breakpoint-up(md) {
+        h1, p {
+          display: block;
+        }
+      }
     }
 
 
 }
-.jumbotron2 {
-    margin-top: 42px;
-    margin-bottom: 0px;
-    background-image: url(http://icarianpublishing.com/clients/promotionstore/builds/development/images/bluegirl.jpg);
-    background-position: 0% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #777;
-    // position: relative;
-    height: 480px;
-    // text-shadow: black 0.3em 0.3em 0.3em;
-}
+// .jumbotron2 {
+//     margin-top: 42px;
+//     margin-bottom: 0px;
+//     background-image: url(http://icarianpublishing.com/clients/promotionstore/builds/development/images/bluegirl.jpg);
+//     background-position: 0% 0%;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     color: #777;
+//     // position: relative;
+//     height: 480px;
+//     // text-shadow: black 0.3em 0.3em 0.3em;
+// }
 
 div.container {
   margin-top: 24px;
