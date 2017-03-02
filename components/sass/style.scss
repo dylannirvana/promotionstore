@@ -1,3 +1,4 @@
+/* hullo */
 // @import "wordpress/style";
 @import "bootstrap/bootstrap";
 /* my imports */
@@ -31,7 +32,7 @@ a:visited {
 
 // $color__link-visited: white;
 
-.main-navigation {
+// .main-navigation {
 	ul {
 		display: flex;
     justify-content: flex-end;
@@ -42,7 +43,7 @@ a:visited {
   		float: none;
     }
   }
-}
+// }
 
 .dropdown-menu {
   color: #000;
@@ -117,28 +118,35 @@ A small CSS modification is required. Add this to your theme CSS.
 
 // JUMBOTRON
 .jumbotron {
-    margin-bottom: 0px;
-    background-image: url(images/bluegirl.jpg);
-    background-position: 0% 25%;
+    margin-bottom: 42px;
+    background-image: url(../images/prizesafe.jpg);
+    background-position: -80px 0;
     background-size: cover;
     background-repeat: no-repeat;
     color: #000;
     padding: 0;
-    // height: 400px;
+    height: 280px;
+
+    @include media-breakpoint-up(md) {
+      height: 480px;
+      background-position: 0 0;
+    }
+
     // text-shadow: black 0.3em 0.3em 0.3em;
     img {
-      height: 100%;
-      position: relative;
+      // height: 100%;
+      // position: relative;
     }
     .jumbotron-copy {
       position: absolute;
       h1, p {
         display: none;
       }
-      top: 15%;
+      top: 25%;
       left: 5%;
 
       @include media-breakpoint-up(md) {
+
         h1, p {
           display: block;
         }

@@ -20,7 +20,7 @@ var env,
     sassStyle;
 
     /* THIS IS THE WORDPRESS DIRECTORY */
-    wpDir = 'wordpress/wp-content/themes/promotionstoretheme/';
+    // wpDir = 'wordpress/wp-content/themes/promotionstoretheme/';
 
 // ENVIRONMENT
 env = process.env.NODE_ENV || 'development';
@@ -35,13 +35,13 @@ if (env==='development') {
 }
 
 // PATHS
-bowerSources = ['bower_components/**/'];
+// bowerSources = ['bower_components/'];
 jsSources = [
-  bowerSources + 'dist/jquery.min.js',
-  bowerSources + 'dist/js/*.min.js',
-  // 'bower_components/jquery/dist/jquery.min.js',
-  // 'bower_components/tether/dist/js/tether.min.js',
-  // 'bower_components/bootstrap/dist/js/bootstrap.min.js',
+  // bowerSources + 'jquery/dist/jquery.js',
+  // bowerSources + 'dist/js/*.min.js',
+  'bower_components/jquery/dist/jquery.min.js',
+  'bower_components/tether/dist/js/tether.min.js',
+  'bower_components/bootstrap/dist/js/bootstrap.min.js',
   'components/scripts/javascript.js'
  ];
 
@@ -63,23 +63,23 @@ gulp.task('compass', function() {
   gulp.src(sassSources)
     .pipe(sourcemaps.init())
     .pipe(compass({
-      sass: 'components/sass',
-      image: outputDir + 'images',
+      sass: 'components/sass', // these are origins not destinations
+      image: 'builds/development/images', // it is confusing to use the outputDir variable here so I wont
       css: outputDir + 'css',
       sourcemap: true,
       style: sassStyle
     })
     .on('error', gutil.log))
-    .pipe(sourcemaps.write(outputDir))
+    // .pipe(sourcemaps.write(outputDir + 'css'))
     .pipe(gulp.dest(outputDir))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('components/sass/**./*.scss', ['compass']);
-  gulp.watch('components/*.html', ['html']);
+  gulp.watch('builds/development/*.html', ['html']);
   // gulp.watch('builds/development/js/*.json', ['json']);
   gulp.watch('builds/development/images/**/*.*', ['images']);
 });

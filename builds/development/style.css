@@ -1,3 +1,4 @@
+/* hullo */
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -8548,13 +8549,13 @@ a:visited {
   color: white;
 }
 
-.main-navigation ul {
+ul {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
   margin-right: 20px;
 }
-.main-navigation ul li {
+ul li {
   float: none;
 }
 
@@ -8588,21 +8589,24 @@ Bootstrap 4.0.0-alpha2 navbar with dropdown menus
 A small CSS modification is required. Add this to your theme CSS.
 */
 .jumbotron {
-  margin-bottom: 0px;
-  background-image: url(images/bluegirl.jpg);
-  background-position: 0% 25%;
+  margin-bottom: 42px;
+  background-image: url(../images/prizesafe.jpg);
+  background-position: -80px 0;
   background-size: cover;
   background-repeat: no-repeat;
   color: #000;
   padding: 0;
+  height: 280px;
 }
-.jumbotron img {
-  height: 100%;
-  position: relative;
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 480px;
+    background-position: 0 0;
+  }
 }
 .jumbotron .jumbotron-copy {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 5%;
 }
 .jumbotron .jumbotron-copy h1, .jumbotron .jumbotron-copy p {
