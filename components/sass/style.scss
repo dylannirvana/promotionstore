@@ -19,16 +19,16 @@
 
 .navbar-inverse .navbar-nav .nav-link {
   color: #fff;
+  a,  a:visited {
+    color: white;
+  }
 }
 
-.navbar-brand {
+.navbar, .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-a:visited {
-    color: white;
-}
 
 // $color__link-visited: white;
 
@@ -119,6 +119,7 @@ A small CSS modification is required. Add this to your theme CSS.
 // JUMBOTRON
 .jumbotron {
     margin-bottom: 42px;
+    margin-top: 42px;
     background-image: url(../images/prizesafe.jpg);
     background-position: -80px 0;
     background-size: cover;
