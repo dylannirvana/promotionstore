@@ -1,11 +1,29 @@
-/* hullo */
-// @import "wordpress/style";
+@import "wordpress/style";
 @import "bootstrap/bootstrap";
 /* my imports */
 @import "header/header";
 
 
 /* my stylesheets */
+
+// #wpadminbar .quicklinks ul {
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+// GLOBAL STYLES
+body {
+  background-color: #ddd;
+}
+
+div.container {
+  background-color: white;
+  margin-top: 0;
+}
+
+div#primary.content-area {
+  margin-top: 44px;
+}
 
 // NAVIGATION
 .bg-inverse {
@@ -32,7 +50,7 @@
 
 // $color__link-visited: white;
 
-// .main-navigation {
+.main-navigation {
 	ul {
 		display: flex;
     justify-content: flex-end;
@@ -43,7 +61,7 @@
   		float: none;
     }
   }
-// }
+}
 
 .dropdown-menu {
   color: #000;
@@ -97,19 +115,22 @@ Bootstrap 4.0.0-alpha2 navbar with dropdown menus
 A small CSS modification is required. Add this to your theme CSS.
 */
 
-// .navbar .dropdown-menu li {
-//   width: 100%;
-//   margin-left: 0 !important;
-// }
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
 
-// li > a {
-//   color: #fff;
-// }
+li > a {
+  color: #fff;
+}
 // Does not override BS
-// li.menu-item a {
-//   color: white;
-// }
+li.menu-item a {
+  color: white;
+}
 
+.navbar-toggleable-md .navbar-collapse {
+    justify-content: flex-end;
+}
 
 // BS variables are not throwing errors but
 // are not overriding them either
@@ -117,61 +138,107 @@ A small CSS modification is required. Add this to your theme CSS.
 // $navbar-inverse-color: blue;
 
 // JUMBOTRON
-.jumbotron {
-    margin-bottom: 42px;
-    margin-top: 42px;
-    background-image: url(../images/prizesafe.jpg);
+.jumbotron, .jumbotron-single {
+    margin-bottom: 0;
+    margin-top: 22px;
     background-position: -80px 0;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: white;
     color: #000;
     padding: 0;
-    height: 280px;
+    // height: 180px;
 
-    @include media-breakpoint-up(md) {
-      height: 480px;
-      background-position: 0 0;
+
+    // @include media-breakpoint-up(sm) {
+    //   height: 240px !important;
+    //   background-position: 0 0;
+    // }
+    //
+    // @include media-breakpoint-up(md) {
+    //   height: 320px !important;
+    //   background-position: 0 0;
+    // }
+    //
+    // @include media-breakpoint-up(lg) {
+    //   height: 420px !important;
+    //   background-position: 0 0;
+    // }
+
+    // SETS JUMBOTRON HEADER TO DISPLAY FONT
+    h1.display-3 {
+      font-family: 'Bevan', cursive, Times;
     }
 
     // text-shadow: black 0.3em 0.3em 0.3em;
     img {
+      height: auto;
+      width: auto;
       // height: 100%;
       // position: relative;
     }
     .jumbotron-copy {
       position: absolute;
-      h1, p {
+
+      p, #{headings()} {
         display: none;
       }
-      top: 25%;
+      top: 1%;
       left: 5%;
+      color: #1d7ab5;
 
-      @include media-breakpoint-up(md) {
+      a:visited {
+        color: white;
+      }
 
-        h1, p {
+      @include media-breakpoint-up(sm) {
+        #{headings()} {
+          display: block;
+          font-size: 1.8rem;
+        }
+        p {
           display: block;
         }
       }
+      @include media-breakpoint-up(md) {
+        #{headings()} {
+          font-size: 2.2rem;
+        }
+      } // end md breakpoint
+
+      @include media-breakpoint-up(lg) {
+          #{headings()} {
+            font-size: 4rem;
+          }
+      } // end md breakpoint
+
+
     }
-
-
 }
-// .jumbotron2 {
-//     margin-top: 42px;
+// .jumbotron-single {
+//     margin-top: 22px;
 //     margin-bottom: 0px;
-//     background-image: url(http://icarianpublishing.com/clients/promotionstore/builds/development/images/bluegirl.jpg);
 //     background-position: 0% 0%;
-//     background-size: cover;
+//     background-size: contain;
 //     background-repeat: no-repeat;
 //     color: #777;
-//     // position: relative;
-//     height: 480px;
-//     // text-shadow: black 0.3em 0.3em 0.3em;
+//     position: relative;
+//     // height: 480px;
+//     img {
+//       max-height: 480px;
+//     }
+//
 // }
 
-div.container {
-  margin-top: 24px;
+// ARTICLE
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  div.row {
+    margin-right: 0;
+  }
 }
+
+
 
 .card {
   margin-bottom: 24px;
@@ -196,6 +263,12 @@ aside {
     border: none;
   }
 }
+
+.side-items {
+  display: flex;
+  justify-content: center;
+}
+
 
 .sidebar-text {
   padding-left: 16px;

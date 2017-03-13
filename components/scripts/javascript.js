@@ -1,3 +1,4 @@
+/* scroll function */
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -12,3 +13,6 @@ $(function() {
     }
   });
 });
+
+$('ul.mr-auto li').addClass('nav-item');
+// $(div.mr-auto).ul.li.a.addClass('nav-link');
