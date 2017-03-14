@@ -1,0 +1,96 @@
+@import "wordpress/style";
+@import "bootstrap/bootstrap";
+/* my imports */
+@import "header/header";
+
+
+/* my stylesheets */
+
+// NAVIGATION
+.bg-inverse {
+  background-color: #1d7ab5 !important;
+}
+
+.mr-auto {
+  margin-right: 10px !important;
+  margin-left: auto !important;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #333;
+}
+
+// Does not override BS
+// li .list-item a {
+//   color: blue;
+// }
+
+// BS variables are not throwing errors but
+// are not overriding them either
+// dont use this approach
+// $navbar-inverse-color: blue;
+
+// JUMBOTRON
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(http://placehold.it/1000x600);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #777;
+    // height: 400px;
+    // text-shadow: black 0.3em 0.3em 0.3em;
+    img {
+      height: 100%;
+    }
+
+
+}
+.jumbotron2 {
+    margin-top: 42px;
+    margin-bottom: 0px;
+    background-image: url(http://icarianpublishing.com/clients/promotionstore/builds/development/images/bluegirl.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #777;
+    // position: relative;
+    height: 480px;
+    // text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+div.container {
+  margin-top: 24px;
+}
+
+.card {
+  margin-bottom: 24px;
+}
+.card-img-top {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%
+}
+
+a.btn.btn-primary {
+  margin-bottom: 16px;
+}
+
+a.card-img-top {
+  position: relative;
+  width: 100%;
+}
+
+aside {
+  .card {
+    border: none;
+  }
+}
+
+.sidebar-text {
+  padding-left: 16px;
+}
+
+.tiny {
+  font-size: .85rem;
+}
