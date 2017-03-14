@@ -4,12 +4,15 @@ bower_components
 builds/**/images
 builds/stockphotos
 components/sass/bootstrap
+components/sass/wordpress
+!components/scripts/javascript.js
+components/scripts/*
 node_modules
 projectnotes
-wordpress
 !wordpress/wp-content/themes/promotionstoretheme/front-page.php
 !wordpress/wp-content/themes/promotionstoretheme/functions.php
 !wordpress/wp-content/themes/promotionstoretheme/header.php
 !wordpress/wp-content/themes/promotionstoretheme/single.php
 !wordpress/wp-content/themes/promotionstoretheme/template-parts/content.php
+wordpress/**
 .tmp
