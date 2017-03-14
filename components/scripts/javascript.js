@@ -14,5 +14,6 @@ $(function() {
   });
 });
 
+
 $('ul.mr-auto li').addClass('nav-item');
 // $(div.mr-auto).ul.li.a.addClass('nav-link');
