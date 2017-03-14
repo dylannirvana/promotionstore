@@ -7,4 +7,9 @@ components/sass/bootstrap
 node_modules
 projectnotes
 wordpress
+!wordpress/wp-content/themes/promotionstoretheme/front-page.php
+!wordpress/wp-content/themes/promotionstoretheme/functions.php
+!wordpress/wp-content/themes/promotionstoretheme/header.php
+!wordpress/wp-content/themes/promotionstoretheme/single.php
+!wordpress/wp-content/themes/promotionstoretheme/template-parts/content.php
 .tmp

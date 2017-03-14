@@ -2,7 +2,7 @@
 @import "bootstrap/bootstrap";
 /* my imports */
 @import "header/header";
-
+@import url('https://fonts.googleapis.com/css?family=Bevan|Lora|Raleway');
 
 /* my stylesheets */
 
@@ -14,6 +14,12 @@
 // GLOBAL STYLES
 body {
   background-color: #ddd;
+  p {
+    font-family: 'Lora', serif;
+  }
+  #{headings()} {
+    font-family: 'Raleway', sans-serif;
+  }
 }
 
 div.container {
@@ -166,8 +172,8 @@ li.menu-item a {
     // }
 
     // SETS JUMBOTRON HEADER TO DISPLAY FONT
-    h1.display-3 {
-      font-family: 'Bevan', cursive, Times;
+    h1, h1.display-3 {
+      font-family: 'Bevan', cursive, Times !important;
     }
 
     // text-shadow: black 0.3em 0.3em 0.3em;
@@ -276,4 +282,25 @@ aside {
 
 .tiny {
   font-size: .85rem;
+}
+
+// FOOTER
+footer.footer {
+  background-color: #1d7ab5 !important;
+  height: 200px;
+  padding: 15px !important;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  // @media (min-width: 992px){
+  //   width: 960px;
+  //   max-width: 100%;
+  // }
+  // @media (min-width: 768px){
+  //   width: 720px;
+  //   max-width: 100%;
+  // }
+  // @media (min-width: 576px){
+  //   width: 540px;
+  //   max-width: 100%;
+  // }
 }
