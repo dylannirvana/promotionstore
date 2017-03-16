@@ -11,4 +11,6 @@ node_modules
 projectnotes
 wordpress
 !wordpress/wp-content/themes/promotionstoretheme/functions.php
+!wordpress/wp-content/themes/promotionstoretheme/header.php
+!wordpress/wp-content/themes/promotionstoretheme/front-page.php
 .tmp
