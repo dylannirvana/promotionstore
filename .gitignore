@@ -10,5 +10,4 @@ components/scripts/*
 node_modules
 projectnotes
 wordpress
-!wordpress/wp-content/themes/promotionstoretheme/functions.php
 .tmp
