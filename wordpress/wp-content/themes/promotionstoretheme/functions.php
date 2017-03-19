@@ -83,6 +83,12 @@ function promotionstoretheme_content_width() {
 }
 add_action( 'after_setup_theme', 'promotionstoretheme_content_width', 0 );
 
+/** Customize the read more tag */
+function modify_read_more_link() {
+    return '<a class="more-link" href="' . get_permalink() . '">Find out more!</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
 /**
  * Register widget area.
  *

@@ -14,7 +14,8 @@ var gulp = require('gulp'),
 var env,
     jsSources,
     sassSources,
-    htmlSources,
+    // htmlSources,
+    phpSources,
     outputDir,
     wpDir,
     sassStyle;
@@ -42,7 +43,8 @@ jsSources = [
  ];
 
 sassSources = [ 'components/sass/style.scss' ];
-htmlSources = [ 'components/*.html'];
+// htmlSources = [ 'components/*.html'];
+phpSources = [ 'components/*.php'];
 
 // TASKS
 gulp.task('js', function() {
@@ -75,7 +77,8 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('components/sass/**./*.scss', ['compass']);
-  gulp.watch('builds/development/*.php', ['html']);
+  gulp.watch('builds/development/*.php', ['php']);
+  gulp.watch('wordpress/wp-content/themes/promotionstoretheme/header.php', ['php']);
   // gulp.watch('builds/development/*.html', ['html']);
   // gulp.watch('builds/development/js/*.json', ['json']);
   gulp.watch('builds/development/images/**/*.*', ['images']);
@@ -88,7 +91,7 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('html', function() {
+gulp.task('php', function() {
   gulp.src('builds/development/*.php')
   // gulp.src('builds/development/*.html')
     .pipe(gulpif(env === 'production', minifyHTML()))
@@ -98,4 +101,4 @@ gulp.task('html', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'compass', 'connect', 'watch']);
+gulp.task('default', ['php', 'js', 'compass', 'connect', 'watch']);
